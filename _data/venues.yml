@@ -1,6 +1,34 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+# "AJP":
+#   url: https://aapt.scitation.org/journal/ajp
+#   color: "#00369f"
+
+# "PhysRev":
+#   url: https://journals.aps.org/
+
+"SLR":
+  url: https://journals.sagepub.com/home/slr
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"TROLLing":
+  url: https://dataverse.no/dataverse/trolling
+  color: "#00369f"
+
+"NALS":
+  url: https://journals.uio.no/NALS
+  color: "#00369f"
+
+"Novus":
+  url: https://novus.no/en
+  color: "#00369f"
+
+"Front. Psychol.":
+  url: https://www.frontiersin.org/journals/psychology
+  color: "#00369f"
+
+"AMP":
+  url: https://journals.linguisticsociety.org/proceedings/index.php/amphonology/index
+  color: "#00369f"
+
+"DUO":
+  url: https://www.duo.uio.no/
+  color: "#00369f"

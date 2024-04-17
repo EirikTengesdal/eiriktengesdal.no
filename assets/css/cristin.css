@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Cristin';
+    src: url('../fonts/Cristin.woff') format('woff'),
+         url('../fonts/Cristin.ttf') format('truetype'),
+         url('../fonts/Cristin.svg#Cristin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+[class*='Cristin-']:before{
+	display: inline-block;
+   font-family: 'Cristin';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+.Cristin-Cristin:before{content:'\0041';}

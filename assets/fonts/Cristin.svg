@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2024-2-8: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20230101 at Thu Feb 08 14:42:33 2024
+ By eiten9710
+
+</metadata>
+<defs>
+<font id="Cristin" horiz-adv-x="1024" >
+  <font-face 
+    font-family="Cristin"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1024"
+    panose-1="2 0 5 9 0 0 0 0 0 0"
+    ascent="819"
+    descent="-205"
+    cap-height="731"
+    bbox="228 -87 932 731"
+    underline-thickness="51"
+    underline-position="-102"
+    unicode-range="U+0041-0041"
+  />
+    <missing-glyph />
+    <glyph glyph-name="A" unicode="A" 
+d="M521 -49c190 0 372 145 372 368c0 222 -182 370 -372 370c-89 0 -179 -32 -254 -104l-29 29c81 79 184 117 285 117c227 0 409 -181 409 -408c0 -223 -180 -410 -412 -410c-106 0 -211 40 -292 118l31 30c76 -76 170 -110 262 -110zM321 530l30 -30
+c-52 -55 -76 -121 -76 -185c0 -127 95 -245 247 -245c149 0 247 123 247 251c0 62 -23 126 -74 177l31 29c60 -59 86 -133 86 -205c0 -150 -115 -295 -291 -295c-192 0 -288 147 -288 292c0 80 29 159 88 211zM521 146c-98 0 -172 80 -172 172c0 91 75 171 172 171
+c26 0 77 -6 119 -47l-30 -29c-26 24 -57 35 -87 35c-66 0 -129 -52 -129 -129c0 -79 63 -130 129 -130c31 0 64 12 90 38l30 -30c-34 -34 -78 -51 -122 -51z" />
+  </font>
+</defs></svg>
