@@ -2,10 +2,9 @@ github_users:
   - EirikTengesdal
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - EirikTengesdal/TextGrid-scripts
+  - EirikTengesdal/Whisper-JSON-processing
+  - EirikTengesdal/AudioSlicer
+  - EirikTengesdal/Multilada
+  - EirikTengesdal/eiriktengesdal.no
+  - EirikTengesdal/MapDrawingScriptforR

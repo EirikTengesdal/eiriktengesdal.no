@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 ENV DEBIAN_FRONTEND noninteractive
 
-LABEL MAINTAINER Amir Pourmand
+LABEL MAINTAINER Eirik Tengesdal
 
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
     locales \
@@ -24,6 +24,7 @@ ENV LANG=en_US.UTF-8 \
     JEKYLL_ENV=production
 
 # install jekyll and dependencies
+#RUN export GEM_HOME="$HOME/.gem"
 RUN gem install jekyll bundler
 
 RUN mkdir /srv/jekyll
@@ -33,7 +34,7 @@ ADD Gemfile /srv/jekyll
 WORKDIR /srv/jekyll
 
 RUN bundle install --no-cache
-# && rm -rf /var/lib/gems/3.1.0/cache
+#&& rm -rf /var/lib/gems/3.1.0/cache
 EXPOSE 8080
 
 COPY bin/entry_point.sh /tmp/entry_point.sh
