@@ -5,3 +5,59 @@
 "lundquist":
   - firstname: ["Björn", "B.", "Björn Lundquist"]
     url: https://uit.no/ansatte/bjorn.lundquist
+
+"johannessen":
+  - firstname: ["Janne", "Janne Bondi", "Janne B.", "J. B.", "Janne Bondi Johannessen"]
+    url: https://www.hf.uio.no/iln/english/about/organization/text-laboratory/about/employees/janne.html
+
+"rodina":
+  - firstname: ["Yulia", "Y.", "Yulia Rodina"]
+    url: https://en.uit.no/ansatte/person?p_document_id=57107
+
+"kaldhol":
+  - firstname: ["Nina", "Nina Hagen", "Nina H.", "N. H.", "Nina Hagen Kaldhol"]
+    url: https://ninahagenkaldhol.wordpress.com/
+
+"turker":
+  - firstname: ["Emel", "E.", "Emel Türker"]
+    url: https://www.hf.uio.no/ikos/personer/vit/midtostenstudier/fast/emel/
+
+"fyndanis":
+  - firstname: ["Valantis", "V.", "Valantis Fyndanis"]
+    url: https://www.cut.ac.cy/faculties/hsc/reh/staff/%CE%94%CE%B9%CE%B4%CE%B1%CE%BA%CF%84%CE%B9%CE%BA%CF%8C+%CE%BA%CE%B1%CE%B9+%CE%95%CF%81%CE%B5%CF%85%CE%BD%CE%B7%CF%84%CE%B9%CE%BA%CF%8C+%CE%A0%CF%81%CE%BF%CF%83%CF%89%CF%80%CE%B9%CE%BA%CF%8C+/c.fyndanis/?languageId=1
+
+"garmann":
+  - firstname: ["Nina", "Nina Gram", "Nina G.", "N. G.", "Nina Gram Garmann"]
+    url: https://www.oslomet.no/en/about/employee/nigrag/
+
+"hansen":
+  - firstname: ["Pernille", "Pernille Bonnevie", "Pernille B.", "P. B.", "Pernille Hansen"]
+    url: https://www.inn.no/english/find-an-employee/pernille-hansen.html
+
+"simonsen":
+  - firstname: ["Hanne", "Hanne Gram", "Hanne G.", "H. G.", "Hanne Gram Simonsen"]
+    url: https://www.hf.uio.no/multiling/english/people/core-group/hannegs/index.html
+
+"holm":
+  - firstname: ["Elisabeth", "E.", "Elisabeth Holm"]
+    url: https://www.oslomet.no/en/about/employee/elho/
+
+"post":
+  - firstname: ["Brechtje", "B.", "Brechtje Post"]
+    url: https://www.jesus.cam.ac.uk/people/brechtje-post
+
+"payne":
+  - firstname: ["Elinor", "E.", "Elinor Payne"]
+    url: https://www.ling-phil.ox.ac.uk/people/elinor-payne
+
+"brinkerhoff":
+  - firstname: ["Mykel", "Myke", "Mykel Loren", "Mykel L.", "Myke L.", "M. L.", "Mykel Loren Brinkerhoff"]
+    url: https://linguistics.ucsc.edu/people/graduate-students.php?uid=mlbrinke
+
+"westendorp":
+  - firstname: ["Maud", "M.", "Maud Westendorp"]
+    url: https://en.uit.no/ansatte/person?p_document_id=525294
+
+"noklestad":
+  - firstname: ["Anders", "A.", "Anders Nøklestad"]
+    url: https://www.hf.uio.no/english/people/admin/fac/research/noklesta/index.html

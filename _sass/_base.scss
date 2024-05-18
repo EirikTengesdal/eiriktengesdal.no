@@ -3,6 +3,7 @@
  ******************************************************************************/
 
 // Typography
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet');
 
 p,
 h1,
@@ -17,6 +18,8 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: 'Crimson Pro';
+  font-weight: 400;
 }
 
 hr {
@@ -1032,12 +1035,12 @@ nav[data-toggle="toc"] {
   top: 5rem;
 
   .nav .nav > li > a {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .nav > li > a {
     color: var(--global-text-color);
-    font-size: 0.75rem;
+    font-size: 1rem;
 
     &:hover {
       color: var(--global-hover-color);
@@ -1048,7 +1051,7 @@ nav[data-toggle="toc"] {
   .nav-link.active {
     color: var(--global-theme-color);
     border-left-color: var(--global-theme-color);
-    font-size: 0.75rem;
+    font-size: 1rem;
 
     &:hover {
       color: var(--global-hover-color);
