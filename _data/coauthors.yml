@@ -1,10 +1,10 @@
-# "adams":
-#   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-#     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"larsson":
+  - firstname: ["Ida", "I.", "Ida Larsson"]
+    url: https://www.hiof.no/lusp/slik/english/people/aca/idala/index.html
 
-# "podolsky":
-#   - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-#     url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"lundquist":
+  - firstname: ["Björn", "B.", "Björn Lundquist"]
+    url: https://uit.no/ansatte/bjorn.lundquist
 
 # "rosen":
 #   - firstname: ["Nathan", "N."]
