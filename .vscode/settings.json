@@ -1,3 +1,4 @@
 {
-  "remote.WSL.debug": true
+  "remote.WSL.debug": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
