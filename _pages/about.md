@@ -22,6 +22,18 @@ I am a tenured [Assistant Professor of Norwegian](https://www.oslomet.no/en/abou
 
 Further, I am a PhD Student at UiO specialising in Scandinavian linguistics. My PhD project involves exploring prosodic variation in Norwegian verb–particle constructions. The project is connected to the RCN funded project [Variation and Change in the Scandinavian Verb Phrase](https://www.hf.uio.no/iln/english/research/projects/variation-and-change-in-the-scandinavian-verb-phra/){:title="https://www.hf.uio.no/iln/english/research/projects/variation-and-change-in-the-scandinavian-verb-phra/" rel="noopener noreferrer"}.
 
+## Academic Interests
+
+- Scandinavian languages
+- Clinical linguistics and language acquisition
+- Multilingualism
+- Phonetics, phonology and prosody
+- Psycholinguistics
+- Norwegian in America
+- Corpus linguistics
+- Computational linguistics and language technology
+- Forensic linguistics
+
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
