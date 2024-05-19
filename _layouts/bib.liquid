@@ -303,9 +303,9 @@
           {% endif %}
         {% endif %}
         {% if site.enable_publication_badges.google_scholar and entry.google_scholar_id %}
-          {% if entry.google_scholar_id != 'false' %}
+          {% if entry.google_scholar_id == 'true' %}
             <span
-              class="has_value"
+              class="google_scholar has_value"
               href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.scholar_userid }}&citation_for_view={{ site.scholar_userid }}:{{ entry.google_scholar_id }}"
               aria-label="Google Scholar link"
               role="button"
