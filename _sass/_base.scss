@@ -778,16 +778,76 @@ footer.sticky-bottom {
       }
 
       .badges {
-        padding-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
+
         span {
-          display: inline-block;
+          display: inline-flex;
+          align-items: stretch;
           color: $black-color;
-          height: 100%;
-          padding-right: 0.5rem;
-          vertical-align: middle;
+
+          &.has_value {
+            padding-right: 0.5rem;
+          }
 
           &:hover {
             text-decoration: underline;
+          }
+
+          img,
+          svg {
+            margin-bottom: 0 !important;
+            height: 20px;
+          }
+
+          &.altmetric-embed {
+            height: 20px;
+            a {
+              line-height: 1;
+              padding: 0;
+              display: flex;
+              align-items: center;
+
+              img {
+                height: 20px;
+                width: auto;
+                vertical-align: baseline;
+              }
+            }
+          }
+
+          &.altmetric-hidden {
+            display: none;
+          }
+
+          &.dimensions-hidden {
+            display: none;
+          }
+
+          &.__dimensions_badge_embed__ {
+            .__db_score.__db_score_normal,
+            .__dimensions_png,
+            .__dimensions_Badge .__dimensions_Badge_style_small_rectangle,
+            .__dimensions_Badge_Image {
+              height: 20px;
+              width: auto;
+              vertical-align: baseline;
+            }
+
+            svg {
+              height: 20px;
+              width: auto;
+              vertical-align: baseline;
+            }
+          }
+
+          &[role="button"] {
+            line-height: 1;
+            padding: 0;
+            display: flex;
+            align-items: center;
           }
         }
       }

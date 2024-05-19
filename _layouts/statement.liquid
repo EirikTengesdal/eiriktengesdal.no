@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h2 class="post-title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h2>
+    <p class="post-description">{{ page.description | markdownify }}</p>
+  </header>
+
+  <article>
+    {{ content }}
+
+    <!-- Add a link to the PDF file if it exists -->
+    {% if page.data %}
+      PDF copy {{ page.pdfcomment }}:
+      <a
+        href="{{ page.data | prepend: '/assets/pdf/statements/' | relative_url }}"
+        target="_blank"
+        title="{{ page.data }}"
+        rel="noopener noreferrer"
+        class="none"
+        ><i class="fa-solid fa-file-pdf"></i
+      ></a>
+    {% endif %}
+
+    <!-- Embed the PDF file if it exists -->
+    {% if page.data %}
+      <br>
+      <br>
+
+      <object
+        data="{{ page.data | prepend: '/assets/pdf/statements/' | relative_url }}"
+        width="100%"
+        height="900"
+        type="application/pdf"
+      ></object>
+    {% endif %}
+  </article>
+</div>

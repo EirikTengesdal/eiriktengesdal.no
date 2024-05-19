@@ -1,5 +1,22 @@
 ---
 ---
+<head>
+  <!-- Make sure to include jQuery before your custom script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<script>
+  $(function () {
+    $('.__dimensions_badge_embed__').on('dimensions_embed:hide', function () {
+      $(this).addClass('dimensions-hidden');
+    });
+
+    $('.__dimensions_badge_embed__').on('dimensions_embed:show', function () {
+      $(this).removeClass('dimensions-hidden');
+    });
+  });
+</script>
+
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
@@ -242,49 +259,53 @@
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
-      {% assign entry_has_altmetric_badge = entry.altmetric or entry.doi or entry.eprint or entry.pmid or entry.isbn %}
-      {% assign entry_has_dimensions_badge = entry.dimensions or entry.doi or entry.pmid %}
-      {% assign entry_has_google_scholar_badge = entry.google_scholar_id %}
-      {% if entry_has_altmetric_badge or entry_has_dimensions_badge or entry_has_google_scholar_badge %}
-        <div class="badges">
-          {% if site.enable_publication_badges.altmetric and entry_has_altmetric_badge %}
-            <span
-              class="altmetric-embed"
-              data-hide-no-mentions="true"
-              data-hide-less-than="15"
-              data-badge-type="2"
-              data-badge-popover="right"
-              {% if entry.eprint %}
-                data-arxiv-id="{{ entry.eprint }}"
-              {% elsif entry.doi %}
-                data-doi="{{ entry.doi }}"
-              {% elsif entry.altmetric %}
-                data-altmetric-id="{{ entry.altmetric }}"
-              {% elsif entry.pmid %}
-                data-pmid="{{ entry.pmid }}"
-              {% elsif entry.isbn %}
-                data-isbn="{{ entry.isbn }}"
-              {% endif %}
-            ></span>
+      <div class="badges">
+        {% if site.enable_publication_badges.altmetric %}
+          {% if entry.altmetric == 'true' %}
+            {% if entry.altmetric or entry.doi or entry.eprint or entry.pmid or entry.isbn %}
+              <span
+                class="altmetric-embed has_value"
+                data-hide-no-mentions="true"
+                data-badge-type="1"
+                data-badge-popover="bottom"
+                {% if entry.eprint %}
+                  data-arxiv-id="{{ entry.eprint }}"
+                {% elsif entry.doi %}
+                  data-doi="{{ entry.doi }}"
+                {% elsif entry.altmetric %}
+                  data-altmetric-id="{{ entry.altmetric }}"
+                {% elsif entry.pmid %}
+                  data-pmid="{{ entry.pmid }}"
+                {% elsif entry.isbn %}
+                  data-isbn="{{ entry.isbn }}"
+                {% endif %}
+              ></span>
+            {% endif %}
           {% endif %}
-          {% if site.enable_publication_badges.dimensions and entry_has_dimensions_badge %}
-            <span
-              class="__dimensions_badge_embed__"
-              {% if entry.doi %}
-                data-doi="{{ entry.doi }}"
-              {% else %}
-                data-pmid="{{ entry.pmid }}"
-              {% else %}
-                data-id="{{ entry.dimensions }}"
-              {% endif %}
-              data-hide-zero-citations="true"
-              data-style="small_rectangle"
-              data-legend="hover-right"
-              style="margin-bottom: 3px;"
-            ></span>
+        {% endif %}
+        {% if site.enable_publication_badges.dimensions %}
+          {% if entry.dimensions == 'true' %}
+            {% if entry.dimensions or entry.doi or entry.pmid %}
+              <span
+                class="__dimensions_badge_embed__ {% if entry.dimensions and entry.dimensions == 'true' %}has_value{% else %}dimensions-hidden{% endif %}"
+                data-hide-zero-citations="true"
+                data-style="small_rectangle"
+                data-legend="hover-bottom"
+                {% if entry.doi %}
+                  data-doi="{{ entry.doi }}"
+                {% elsif entry.pmid %}
+                  data-pmid="{{ entry.pmid }}"
+                {% elsif entry.dimensions %}
+                  data-id="{{ entry.dimensions }}"
+                {% endif %}
+              ></span>
+            {% endif %}
           {% endif %}
-          {% if site.enable_publication_badges.google_scholar and entry_has_google_scholar_badge %}
-            <a
+        {% endif %}
+        {% if site.enable_publication_badges.google_scholar and entry.google_scholar_id %}
+          {% if entry.google_scholar_id != 'false' %}
+            <span
+              class="has_value"
               href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.scholar_userid }}&citation_for_view={{ site.scholar_userid }}:{{ entry.google_scholar_id }}"
               aria-label="Google Scholar link"
               role="button"
@@ -293,10 +314,10 @@
                 src="https://img.shields.io/badge/scholar-{% google_scholar_citations site.scholar_userid entry.google_scholar_id %}-4285F4?logo=googlescholar&labelColor=beige"
                 alt="{% google_scholar_citations site.scholar_userid entry.google_scholar_id %} Google Scholar citations"
               >
-            </a>
+            </span>
           {% endif %}
-        </div>
-      {% endif %}
+        {% endif %}
+      </div>
     {% endif %}
 
     {% if entry.award %}
