@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Statements
-alt_title: Hearing Statements
 permalink: /statements/
 description: This collection contains response statements to public consultations for comments (<em>høringer</em>).
 nav: true
