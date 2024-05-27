@@ -195,68 +195,74 @@
     </div>
 
     <!-- Links/Buttons -->
-    <div class="links">
+    {% comment %} <div class="links"> {% endcomment %}
+    <div class="links btn-toolbar" role="toolbar">
       {% if entry.award %}
-        <a class="award btn btn-sm z-depth-0" role="button">{{ entry.award_name ? entry.award_name : "Awarded" }}</a>
+        <a class="award btn-group btn-group-sm z-depth-0" role="group">{{ entry.award_name ? entry.award_name : "Awarded" }}</a>
       {% endif %}
       {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+        <a class="abstract btn-group btn-group-sm z-depth-0" role="group">Abs</a>
       {% endif %}
       {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn-group btn-group-sm z-depth-0" role="group">arXiv</a>
+      {% endif %}
+      {% if entry.bibtex_show %}
+        <a class="bibtex btn-group btn-group-sm z-depth-0" role="group"><i class="BibTeX-BibTeX BibTeX-lg fa-fw"></i> BibTeX</a>
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html }}" class="btn-group btn-group-sm z-depth-0" role="group">HTML</a>
         {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn-group btn-group-sm z-depth-0" role="group">HTML</a>
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf }}" class="btn-group btn-group-sm z-depth-0" role="group"><i class="far fa-file-pdf fa-lg fa-fw"></i> PDF</a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn-group btn-group-sm z-depth-0" role="group"><i class="far fa-file-pdf fa-lg fa-fw"></i> PDF</a>
         {% endif %}
       {% endif %}
-      {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      {% if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}" title="https://doi.org/{{ entry.doi }}" class="btn-group btn-group-sm z-depth-0" role="group"><i class="ai ai-doi ai-lg fa-fw"></i>DOI</a>
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp }}" class="btn-group btn-group-sm z-depth-0" role="group">Supp</a>
         {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn-group btn-group-sm z-depth-0" role="group">Supp</a>
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Video</a>
+        <a class="abstract btn-group btn-group-sm z-depth-0" role="group">Video</a>
       {% elsif entry.video %}
-        <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+        <a href="{{ entry.video }}" class="btn-group btn-group-sm z-depth-0" role="group">Video</a>
       {% endif %}
       {% if entry.blog %}
-        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
+        <a href="{{ entry.blog }}" class="btn-group btn-group-sm z-depth-0" role="group">Blog</a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a href="{{ entry.code }}" title="{{ entry.code }}" class="btn-group btn-group-sm z-depth-0" role="group"><i class="fab fa-github fa-lg fa-fw"></i> Code</a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
-          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster }}" class="btn-group btn-group-sm z-depth-0" role="group">Poster</a>
         {% else %}
-          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn-group btn-group-sm z-depth-0" role="group">Poster</a>
         {% endif %}
       {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
-          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides }}" class="btn-group btn-group-sm z-depth-0" role="group">Slides</a>
         {% else %}
-          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn-group btn-group-sm z-depth-0" role="group">Slides</a>
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+        <a href="{{ entry.website }}" title="{{ entry.website }}" class="btn-group btn-group-sm z-depth-0" role="group"><i class="fa fa-link fa-lg fa-fw"></i> Website</a>
       {% endif %}
+      {% comment %} <i class="fa fa-book fa-lg fa-fw"></i> {% endcomment %}
+      {% comment %} <i class="fa fa-database fa-lg fa-fw"></i> {% endcomment %}
     </div>
     {% if site.enable_publication_badges %}
       <div class="badges">

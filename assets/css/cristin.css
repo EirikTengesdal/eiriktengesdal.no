@@ -8,13 +8,20 @@
     font-display: block;
 }
 [class*='Cristin-']:before{
-	display: inline-block;
-   font-family: 'Cristin';
-   font-style: normal;
-   font-weight: normal;
-   line-height: 1;
-   text-rendering: auto;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale
+    display: inline-block;
+    font-family: 'Cristin';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
 }
+
 .Cristin-Cristin:before{content:'\0041';}
+
+.Cristin-lg {
+    font-size: 1.33333em;
+    line-height: 0.75em;
+    vertical-align: -.0667em;
+}

@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <i>Page under construction!</i> # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <i>Website under construction!</i> # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right

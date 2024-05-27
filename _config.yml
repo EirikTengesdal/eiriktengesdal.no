@@ -50,7 +50,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -67,6 +67,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
+academia_id: https://oslomet.academia.edu/EirikTengesdal # your Academia URL
 acm_id: # your dl.acm.org/profile/id
 blogger_url: # your blogger URL
 bluesky_url: # your bluesky URL
@@ -87,11 +88,12 @@ linkedin_username: eirik-tengesdal-7b8b6166 # your LinkedIn user name
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 medium_username: # your Medium username
 orcid_id: 0000-0003-0599-8925 # your ORCID ID
-osf_id: # your OSF ID
+osf_id: h9rg7 # your OSF ID
 pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: Eirik-Tengesdal # your profile on ResearchGate
+researcher_id: KHE-3087-2024 # your Web of Science ResearcherID
 scholar_userid: Dr2Q9hwAAAAJ # your Google Scholar ID
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
@@ -103,13 +105,14 @@ wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
-work_url: # work page URL
+work_url: https://www.oslomet.no/en/about/employee/eiten9710/ # work page URL
 x_username: EirikTengesdal # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
-contact_note: >
-  # You can even add a little note about which of these is the best way to reach you.
+contact_note:
+  > # You can even add a little note about which of these is the best way to reach you.
+
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -134,7 +137,7 @@ permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false #true
 
 related_blog_posts:
   enabled: true
@@ -214,6 +217,10 @@ kramdown:
 include:
   - _pages
   - _plugins/bibtex.rb
+  - _plugins/_capitalize_all.rb
+  - _plugins/_small_caps.rb
+  - assets/css
+  - assets/fonts
 exclude:
   - _pages/about_einstein.md
   - _pages/blog.md
@@ -601,7 +608,7 @@ jekyll_get_json:
   - data: resume
     json: assets/json/resume.json # it can also be an url
 jsonresume:
-  - basics
+  - personal_information
   - work
   - education
   - publications

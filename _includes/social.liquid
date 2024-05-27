@@ -7,17 +7,27 @@
 {% if site.whatsapp_number %}
   <a href="https://wa.me/{{ site.whatsapp_number }}" title="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
 {% endif %}
-{% if site.cristin %}
-  <a href="{{ site.cristin_id }}" title="Cristin"><i class="Cristin-Cristin"></i></a>
+{% if site.cristin_id %}
+  <a href="https://app.cristin.no/persons/show.jsf?id={{ site.cristin_id }}" title="Cristin" class="social fa-stack" style="--fa-inverse: var(--global-text-color);">
+    <i class="fa-solid fa-square fa-stack-1x"></i>
+    <i class="Cristin-Cristin fa-stack-1x"></i>
+  </a>
 {% endif %}
+{% comment %} {% if site.cristin_id %}
+  <a href="https://app.cristin.no/persons/show.jsf?id={{ site.cristin_id }}" title="Cristin"><i class="Cristin-Cristin fa-fw"></i></a>
+  <a class="social fa-stack" style="--fa-inverse: white;">
+    <i class="fa-solid fa-square fa-stack-2x"></i>
+    <i class="Cristin-Cristin fa-fw fa-stack-1x fa-inverse"></i>
+  </a>
+{% endif %} {% endcomment %}
 {% if site.orcid_id %}
-  <a href="https://orcid.org/{{ site.orcid_id }}" title="ORCID"><i class="ai ai-orcid"></i></a>
+  <a href="https://orcid.org/{{ site.orcid_id }}" title="ORCID"><i class="ai ai-orcid-square"></i></a>
 {% endif %}
 {% if site.scholar_userid %}
-  <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+  <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar-square"></i></a>
 {% endif %}
 {% if site.semanticscholar_id %}
-  <a href="https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}" title="Semantic Scholar"><i class="ai ai-semantic-scholar"></i></a>
+  <a href="https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}" title="Semantic Scholar"><i class="ai ai-semantic-scholar-square"></i></a>
 {% endif %}
 {% if site.publons_id %}
   <a href="https://publons.com/a/{{ site.publons_id }}/" title="Publons"><i class="ai ai-publons"></i></a>
@@ -26,10 +36,10 @@
   <a href="http://lattes.cnpq.br/{{ site.lattes_id }}" target="_blank" title="Lattes"><i class="ai ai-lattes"></i></a>
 {% endif %}
 {% if site.osf_id %}
-  <a href="https://osf.io/{{ site.osf_id }}/" title="Open Science Framework"><i class="ai ai-osf"></i></a>
+  <a href="https://osf.io/{{ site.osf_id }}/" title="Open Science Framework"><i class="ai ai-osf-square"></i></a>
 {% endif %}
 {% if site.research_gate_profile %}
-  <a href="https://www.researchgate.net/profile/{{site.research_gate_profile}}/" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
+  <a href="https://www.researchgate.net/profile/{{site.research_gate_profile}}/" title="ResearchGate"><i class="ai ai-researchgate-square"></i></a>
 {% endif %}
 {% if site.ieee_id %}
   <a href="https://ieeexplore.ieee.org/author/{{site.ieee_id}}/" title="IEEE Xplore"><i class="ai ai-ieee"></i></a>
@@ -41,13 +51,19 @@
   <a href="https://www.scopus.com/authid/detail.uri?authorId={{site.scopus_id}}" title="Scopus"><i class="ai ai-scopus"></i></a>
 {% endif %}
 {% if site.github_username %}
-  <a href="https://github.com/{{ site.github_username }}" title="GitHub"><i class="fa-brands fa-github"></i></a>
+  <a href="https://github.com/{{ site.github_username }}" title="GitHub"><i class="fa-brands fa-github-square"></i></a>
 {% endif %}
 {% if site.linkedin_username %}
   <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
 {% endif %}
-{% if site.x_username %}
-  <a href="https://twitter.com/{{ site.x_username }}" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+{% if site.academia_id %}
+  <a href="{{ site.academia_id }}" title="Academia"><i class="ai ai-academia-square"></i></a>
+{% endif %}
+{% if site.researcher_id %}
+  <a href="http://researcherid.com/rid/{{ site.researcher_id }}" title="Web of Science ResearcherID"><i class="ai ai-researcherid-square"></i></a>
+{% endif %}
+  {% if site.x_username %}
+  <a href="https://twitter.com/{{ site.x_username }}" title="X"><i class="fa-brands fa-square-x-twitter"></i></a>
 {% endif %}
 {% if site.mastodon_username %}
   <a rel="me" href="https://{{ site.mastodon_username  }}" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
@@ -64,9 +80,9 @@
 {% if site.blogger_url %}
   <a href="{{ site.blogger_url }}" title="Blogger"><i class="fa-brands fa-blogger-b"></i></a>
 {% endif %}
-{% if site.work_url %}
-  <a href="{{ site.work_url }}" title="Work"><i class="fa-solid fa-briefcase"></i></a>
-{% endif %}
+{% comment %} {% if site.work_url %}
+  <a href="{{ site.work_url }}" title="Work"><i class="fa-regular fa-building"></i></a>
+{% endif %} {% endcomment %}
 {% if site.wikidata_id %}
   <a href="https://www.wikidata.org/wiki/{{ site.wikidata_id }}" title="Wikidata"><i class="fa-solid fa-barcode"></i></a>
 {% endif %}
@@ -107,7 +123,7 @@
   <a href="https://instagram.com/{{ site.instagram_id }}" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
 {% endif %}
 {% if site.facebook_id %}
-  <a href="https://facebook.com/{{ site.facebook_id }}" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+  <a href="https://facebook.com/{{ site.facebook_id }}" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
 {% endif %}
 {% if site.bluesky_url %}
   <a href="https://bsky.app/profile/{{ site.bluesky_url }}" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>

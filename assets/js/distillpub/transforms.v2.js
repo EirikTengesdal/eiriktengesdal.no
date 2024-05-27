@@ -11697,7 +11697,7 @@
               }
 
               //////////////////////////////////////////////////////////////////////
-              // basics
+              // personal_information
               defineMacro("\\bgroup", "{");
               defineMacro("\\egroup", "}");
               defineMacro("\\begingroup", "{");

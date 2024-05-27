@@ -384,12 +384,32 @@ ul.task-list input[type="checkbox"] {
 .social {
   text-align: center;
 
+  a.fa-stack {
+    position: relative; // This allows you to use the top property
+    top: -7px; // Adjust this value to move the icons up
+    width: 56px; // Adjust this value to change the width of the <a> element
+    height: 71px; // Adjust this value to change the height of the <a> element
+    display: inline-block;
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+    line-height: 1; // Adjust this value to center the icons vertically
+  }
+
+  // a.fa-stack-1x {
+  //   // font-size: 1.5rem; // Adjust this value to change the size of the icon
+  //   // vertical-align: middle; // Adjust this value to align the icons
+  //   .Cristin-Cristin {
+  //     font-size: 1.5rem;
+  //     color: white;
+  //   }
+  // }
+
   .contact-icons {
     font-size: 4rem;
 
     a {
       i::before {
-        color: var(--global-text-color);
+        color: var(--global-text-color-light);
         transition-property: all 0.2s ease-in-out;
       }
 
@@ -398,8 +418,28 @@ ul.task-list input[type="checkbox"] {
           color: var(--global-theme-color);
         }
       }
+
+      .Cristin-Cristin::before {
+        font-size: 3.5rem;
+        color: white;
+        position: relative;
+        top: -3px; // Adjust this value to move the symbol up
+      }
+
+      .Cristin-Cristin:hover::before {
+        color: white;
+      }
     }
   }
+
+  // .fa-stack {
+  //   line-height: 1; // Adjust this value to center the icons vertically
+  // }
+
+
+  // i.fa-solid {
+  //   line-heigth: 3em;
+  // }
 
   .contact-note {
     font-size: 0.8rem;
@@ -694,11 +734,17 @@ footer.sticky-bottom {
 
     li {
       margin-bottom: 1rem;
+      padding-right: 0rem;
 
       .preview {
-        width: 100%;
-        min-width: 80px;
-        max-width: 200px;
+        // width: 100%;
+        min-width: 200px;
+        // max-width: 300px;
+        margin-right: 1rem;
+
+        @media (max-width: 768px) {
+          max-width: 370px;
+        }
       }
 
       .abbr {
@@ -758,14 +804,43 @@ footer.sticky-bottom {
       }
 
       .links {
-        a.btn {
+        padding-top: .25rem !important;
+        padding-bottom: .25rem !important;
+
+        i.fa, i.far, i.fab, i.ai-lg {
+          line-height: 1;
+        }
+
+        a.btn-group-sm {
+          font-size: 12px;
+          // font-variant: small-caps;
+          // text-transform: lowercase;
+          text-transform: uppercase;
+          // display: inline-flex;
+
+          // font-size: 0.875rem;
+          // font-size: .64rem;
+
+        }
+
+        a.btn-group {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
+          margin-left: 0px;
+          margin-right: 3px;
+          // margin-top: 3px;
+          // margin-bottom: 3px;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
-          margin-left: 0;
+          // margin-left: 0;
+
+          // &:first-child {
+          //   margin-left: 3px;
+          //   // display: flex;
+          //   // align-items: center;
+          // }
 
           &:hover {
             color: var(--global-theme-color);
