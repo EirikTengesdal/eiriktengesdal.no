@@ -14,6 +14,21 @@ _news
 _pages
 _posts
 _sass
+_assets
+_projects
+_config.yml
+_statements
+assets
+CONTRIBUTING.md
+CUSTOMIZE.md
+docker-compose-slim.yml
+docker-compose.yml
+FAQ.md
+INSTALL.md
+package-lock.json
+package.json
+purgecss.config.js
+README.md
 
 *.*
 LICENSE
