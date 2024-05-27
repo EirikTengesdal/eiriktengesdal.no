@@ -14,3 +14,12 @@ _news
 _pages
 _posts
 _sass
+
+*.*
+LICENSE
+!*.js
+!*.json
+!*.md
+!*.ts
+!*.tsx
+!*.yml
