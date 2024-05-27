@@ -7,3 +7,10 @@ assets/plotly/demo.html
 lighthouse_results/**
 _posts/2015-10-20-math.md
 assets/css/cristin.css
+_data
+_includes
+_layouts
+_news
+_pages
+_posts
+_sass
