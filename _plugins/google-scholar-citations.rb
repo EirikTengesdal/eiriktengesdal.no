@@ -68,7 +68,7 @@ module Jekyll
         puts "Error fetching citation count for #{article_id}: #{e.class} - #{e.message}"
       end
 
-
+      
       GoogleScholarCitationsTag::Citations[article_id] = citation_count
       return "#{citation_count}"
     end

@@ -25,6 +25,10 @@ let setThemeSetting = (themeSetting) => {
 let applyTheme = () => {
   let theme = determineComputedTheme();
 
+  // Dispatch a colorschemechange event
+  let event = new CustomEvent('colorschemechange', { detail: { colorScheme: theme } });
+  document.dispatchEvent(event);
+
   transTheme();
   setHighlight(theme);
   setGiscusTheme(theme);

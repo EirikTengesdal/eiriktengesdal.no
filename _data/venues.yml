@@ -1,27 +1,27 @@
 "SLR":
   url: https://journals.sagepub.com/home/slr
-  color: "#00369f"
+  color: var(--global-venue-color)
 
 "TROLLing":
   url: https://dataverse.no/dataverse/trolling
-  color: "#00369f"
+  color: var(--global-venue-color)
 
 "NALS":
   url: https://journals.uio.no/NALS
-  color: "#00369f"
+  color: var(--global-venue-color)
 
 "Novus":
   url: https://novus.no/en
-  color: "#00369f"
+  color: var(--global-venue-color)
 
 "Front. Psychol.":
   url: https://www.frontiersin.org/journals/psychology
-  color: "#00369f"
+  color: var(--global-venue-color)
 
 "AMP":
   url: https://journals.linguisticsociety.org/proceedings/index.php/amphonology/index
-  color: "#00369f"
+  color: var(--global-venue-color)
 
 "DUO":
   url: https://www.duo.uio.no/
-  color: "#00369f"
+  color: var(--global-venue-color)

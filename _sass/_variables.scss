@@ -16,7 +16,7 @@ $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
 $purple-color: #6209b5 !default;
 $light-purple-color: lighten($purple-color, 25%);
-$cyan-color: lighten($purple-color, 30%);
+$cyan-color: lighten($purple-color, 25%);
 // $cyan-color: #2698ba !default;
 $light-cyan-color: lighten($cyan-color, 5%);
 $pink-color: #f92080 !default;
@@ -35,6 +35,7 @@ $black-color: #000000 !default;
 
 $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
+$venue-color: darken($purple-color, 5%);
 
 // Font size
 $custom-font-size: 18px !default;

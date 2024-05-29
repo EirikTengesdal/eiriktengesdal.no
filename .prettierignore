@@ -1,40 +1,40 @@
-**/*.map
-**/*.min.css
-**/*.min.js
-assets/css/main.scss
-assets/js/distillpub/template.v2.js
-assets/plotly/demo.html
-lighthouse_results/**
-_posts/2015-10-20-math.md
-assets/css/cristin.css
-_data
-_includes
-_layouts
-_news
-_pages
-_posts
-_sass
-_assets
-_projects
-_config.yml
-_statements
-assets
-CONTRIBUTING.md
-CUSTOMIZE.md
-docker-compose-slim.yml
-docker-compose.yml
-FAQ.md
-INSTALL.md
-package-lock.json
-package.json
-purgecss.config.js
-README.md
+# **/*.map
+# **/*.min.css
+# **/*.min.js
+# assets/css/main.scss
+# assets/js/distillpub/template.v2.js
+# assets/plotly/demo.html
+# lighthouse_results/**
+# _posts/2015-10-20-math.md
+# assets/css/cristin.css
+# _data
+# _includes
+# _layouts
+# _news
+# _pages
+# _posts
+# _sass
+# _assets
+# _projects
+# _config.yml
+# _statements
+# assets
+# CONTRIBUTING.md
+# CUSTOMIZE.md
+# docker-compose-slim.yml
+# docker-compose.yml
+# FAQ.md
+# INSTALL.md
+# package-lock.json
+# package.json
+# purgecss.config.js
+# README.md
 
-*.*
-LICENSE
-!*.js
-!*.json
-!*.md
-!*.ts
-!*.tsx
-!*.yml
+# *.*
+# LICENSE
+# !*.js
+# !*.json
+# !*.md
+# !*.ts
+# !*.tsx
+# !*.yml
