@@ -220,7 +220,8 @@ include:
   - _plugins/_capitalize_all.rb
   - _plugins/_small_caps.rb
   - _plugins/nolinebreaks.rb
-  - assets/css
+  - assets/css/cristin.css
+  - assets/css/bibtex.css
   - assets/fonts
 exclude:
   - _pages/about_einstein.md
