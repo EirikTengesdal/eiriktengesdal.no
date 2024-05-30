@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Crimson Pro
+- Font Author: Copyright 2018 The Crimson Pro Project Authors (https://github.com/Fonthausen/CrimsonPro)
+- Font Source: https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm18OJE_VNWoyQ.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
