@@ -29,12 +29,3 @@ assets/css/cristin.css
 # package.json
 # purgecss.config.js
 # README.md
-
-# *.*
-# LICENSE
-# !*.js
-# !*.json
-# !*.md
-# !*.ts
-# !*.tsx
-# !*.yml
