@@ -2,7 +2,7 @@
     font-family: 'Cristin';
     src: url('../fonts/Cristin.woff') format('woff'),
          url('../fonts/Cristin.ttf') format('truetype'),
-         url('../fonts/Cristin.svg#Cristin') format('svg');
+         url('../fonts/Cristin.svg') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;

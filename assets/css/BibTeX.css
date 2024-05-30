@@ -2,7 +2,7 @@
     font-family: 'BibTeX';
     src: url('../fonts/BibTeX.woff') format('woff'),
          url('../fonts/BibTeX.ttf') format('truetype'),
-         url('../fonts/BibTeX.svg#BibTeX') format('svg');
+         url('../fonts/BibTeX.svg') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
