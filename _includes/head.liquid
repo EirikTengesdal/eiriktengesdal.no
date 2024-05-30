@@ -63,7 +63,7 @@
   >
 {% endif %}
 
-{% comment %} {% if site.icon.size <= 4 %}
+{% if site.icon.size <= 4 %}
   <link
     rel="shortcut icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
@@ -71,46 +71,13 @@
 {% elsif site.icon != blank %}
   <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
 {% elsif site.icon == blank %}
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/light_apple-touch-icon.png" data-type="favicon" data-light="/assets/favicon/light_apple-touch-icon.png" data-dark="/assets/favicon/dark_apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/light_favicon-32x32.png" data-type="favicon" data-light="/assets/favicon/light_favicon-32x32.png" data-dark="/assets/favicon/dark_favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/light_favicon-16x16.png" data-type="favicon" data-light="/assets/favicon/light_favicon-16x16.png" data-dark="/assets/favicon/dark_favicon-16x16.png">
-  <link rel="favicon" href="/assets/favicon/light_favicon.ico" data-type="favicon" data-light="/assets/favicon/light_favicon.ico" data-dark="/assets/favicon/dark_favicon.ico">
-  <link rel="manifest" href="/assets/favicon/light_site.webmanifest" data-type="manifest" data-light="/assets/favicon/light_site.webmanifest" data-dark="/assets/favicon/dark_site.webmanifest")">
-{% endif %} {% endcomment %}
- 
-<link rel="manifest" href="/assets/favicon/light_site.webmanifest" data-href-light="/assets/favicon/light_site.webmanifest" data-href-dark="/assets/favicon/dark_site.webmanifest">
-<link rel="icon" href="/assets/favicon/light_favicon-32x32.png" data-href-light="/assets/favicon/light_favicon-32x32.png" data-href-dark="/assets/favicon/dark_favicon-32x32.png" sizes="32x32">
-<link rel="icon" href="/assets/favicon/light_favicon-16x16.png" data-href-light="/assets/favicon/light_favicon-16x16.png" data-href-dark="/assets/favicon/dark_favicon-16x16.png" sizes="16x16">
-<link rel="apple-touch-icon" href="/assets/favicon/light_apple-touch-icon.png" data-href-light="/assets/favicon/light_apple-touch-icon.png" data-href-dark="/assets/favicon/dark_apple-touch-icon.png" sizes="180x180">
-<link rel="favicon" href="/assets/favicon/light_favicon.ico" data-href-light="/assets/favicon/light_favicon.ico" data-href-dark="/assets/favicon/dark_favicon.ico">
-  
-<script defer src="/assets/js/favicon-switcher.js"></script>
-
-{% comment %} https://web.dev/articles/prefers-color-scheme#full_example {% endcomment %}
-
-{% comment %} <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/dark_apple-touch-icon.png" media="(prefers-color-scheme:dark)">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/dark_favicon-32x32.png" media="(prefers-color-scheme:dark)">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/dark_favicon-16x16.png" media="(prefers-color-scheme:dark)">
-<link rel="manifest" href="/assets/favicon/dark_site.webmanifest" media="(prefers-color-scheme:dark)">
-
-<script>
-const usesDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches || false;
-const favicon = document.getElementById('favicon');
-const manifest = document.getElementById('manifest');
-
-function switchIcon(usesDarkMode) {
-  if (usesDarkMode) { 
-    favicon.href = '/assets/favicon/dark_favicon.ico';
-    manifest.href='/assets/favicon/dark_site.webmanifest' 
-  } else {
-    favicon.href = '/assets/favicon/light_favicon.ico';
-    manifest.href='/assets/favicon/light_site.webmanifest' 
-  }
-}
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener( "change", (e) => switchIcon(e.matches));
-switchIcon(usesDarkMode);
-</script> {% endcomment %}
+  <link rel="manifest" href="/assets/favicon/light_site.webmanifest" data-href-light="/assets/favicon/light_site.webmanifest" data-href-dark="/assets/favicon/dark_site.webmanifest">
+  <link rel="icon" href="/assets/favicon/light_favicon-32x32.png" data-href-light="/assets/favicon/light_favicon-32x32.png" data-href-dark="/assets/favicon/dark_favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="/assets/favicon/light_favicon-16x16.png" data-href-light="/assets/favicon/light_favicon-16x16.png" data-href-dark="/assets/favicon/dark_favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/favicon/light_apple-touch-icon.png" data-href-light="/assets/favicon/light_apple-touch-icon.png" data-href-dark="/assets/favicon/dark_apple-touch-icon.png" sizes="180x180">
+  <link rel="favicon" href="/assets/favicon/light_favicon.ico" data-href-light="/assets/favicon/light_favicon.ico" data-href-dark="/assets/favicon/dark_favicon.ico">    
+  <script defer src="/assets/js/favicon-switcher.js"></script>
+{% endif %}
 
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
