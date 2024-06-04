@@ -7,6 +7,8 @@ nav: true
 nav_order: 2
 ---
 
+For a more extensive overview, view my [Cristin profile](https://app.cristin.no/persons/show.jsf?id={{ site.cristin_id }}){:title="https://app.cristin.no/persons/show.jsf?id={{ site.cristin_id }}" rel="noopener noreferrer"}
+
 <!-- _pages/publications.md -->
 <div class="publications">
 
