@@ -7,15 +7,15 @@ assets/plotly/demo.html
 lighthouse_results/**
 _posts/2015-10-20-math.md
 # assets/css/cristin.css
-# _data
-# _includes
-# _layouts
+_data
+_includes
+_layouts
 # _news
 # _pages
-# _posts
-# _sass
-# _assets
-# _projects
+_posts
+_sass
+_assets
+_projects
 # _config.yml
 # _statements
 # assets
@@ -23,9 +23,10 @@ _posts/2015-10-20-math.md
 # CUSTOMIZE.md
 # docker-compose-slim.yml
 # docker-compose.yml
-# FAQ.md
+FAQ.md
 # INSTALL.md
 # package-lock.json
 # package.json
 # purgecss.config.js
-# README.md
+README.md
+eslintrc.json
