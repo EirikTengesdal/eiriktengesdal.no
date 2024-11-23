@@ -224,6 +224,9 @@ include:
   - assets/css/bibtex.css
   - assets/fonts
 exclude:
+  - assets/video/
+  - assets/audio/
+  - _/blog/2022/
   - _news/
   - _pages/about_einstein.md
   - _pages/blog.md
