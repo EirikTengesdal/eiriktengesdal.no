@@ -1,9 +1,17 @@
-"SLR":
-  url: https://journals.sagepub.com/home/slr
+"AMP":
+  url: https://journals.linguisticsociety.org/proceedings/index.php/amphonology/index
   color: var(--global-venue-color)
 
-"TROLLing":
-  url: https://dataverse.no/dataverse/trolling
+"DUO":
+  url: https://www.duo.uio.no/
+  color: var(--global-venue-color)
+
+"Front. Psychol.":
+  url: https://www.frontiersin.org/journals/psychology
+  color: var(--global-venue-color)
+
+"MOM":
+  url: https://ojs.novus.no/index.php/MOM
   color: var(--global-venue-color)
 
 "NALS":
@@ -14,14 +22,10 @@
   url: https://novus.no/en
   color: var(--global-venue-color)
 
-"Front. Psychol.":
-  url: https://www.frontiersin.org/journals/psychology
+"SLR":
+  url: https://journals.sagepub.com/home/slr
   color: var(--global-venue-color)
 
-"AMP":
-  url: https://journals.linguisticsociety.org/proceedings/index.php/amphonology/index
-  color: var(--global-venue-color)
-
-"DUO":
-  url: https://www.duo.uio.no/
+"TROLLing":
+  url: https://dataverse.no/dataverse/trolling
   color: var(--global-venue-color)
