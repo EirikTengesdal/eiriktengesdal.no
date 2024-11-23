@@ -627,7 +627,7 @@ jsonresume:
 
 # Customize the section titles in the cv page, leave it blank for default
 sectiontitles:
-  basics:
+  basics: personal information
   work:
   education:
   publications:
