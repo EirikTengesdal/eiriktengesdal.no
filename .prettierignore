@@ -1,7 +1,7 @@
 **/*.map
 **/*.min.css
 **/*.min.js
-# assets/css/main.scss
+assets/css/main.scss
 # assets/css/jupyter-grade3.css
 # assets/css/jupyter-monokai.css
 # assets/favicon/dark_site.webmanifest
