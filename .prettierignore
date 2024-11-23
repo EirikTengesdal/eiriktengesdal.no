@@ -2,20 +2,30 @@
 **/*.min.css
 **/*.min.js
 assets/css/main.scss
+assets/css/jupyter-grade3.css
+assets/css/jupyter-monokai.css
+assets/favicon/dark_site.webmanifest
+assets/favicon/light_site.webmanifest
+assets/js/copy_code.js
+assets/js/distillpub/overrides.js
+assets/js/distillpub/transforms.v2.js
 assets/js/distillpub/template.v2.js
+assets/js/favicon-switcher.js
+assets/js/theme.js
+assets/js/zoom.js
 assets/plotly/demo.html
 lighthouse_results/**
 _posts/2015-10-20-math.md
 # assets/css/cristin.css
-# _data
-# _includes
-# _layouts
+_data
+_includes
+_layouts
 # _news
 # _pages
-# _posts
-# _sass
-# _assets
-# _projects
+_posts
+_sass
+_assets
+_projects
 # _config.yml
 # _statements
 # assets
@@ -23,9 +33,10 @@ _posts/2015-10-20-math.md
 # CUSTOMIZE.md
 # docker-compose-slim.yml
 # docker-compose.yml
-# FAQ.md
+FAQ.md
 # INSTALL.md
 # package-lock.json
 # package.json
 # purgecss.config.js
-# README.md
+README.md
+eslintrc.json
