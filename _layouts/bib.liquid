@@ -237,9 +237,9 @@
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn-group btn-group-sm z-depth-0" role="group">Supp</a>
+          <a href="{{ entry.supp }}" class="btn-group btn-group-sm z-depth-0" role="group"><i class="far fa-file-pdf fa-lg fa-fw"></i> Supp</a>
         {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn-group btn-group-sm z-depth-0" role="group">Supp</a>
+          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn-group btn-group-sm z-depth-0" role="group"><i class="far fa-file-pdf fa-lg fa-fw"></i> Supp</a>
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
