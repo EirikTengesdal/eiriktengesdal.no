@@ -6,6 +6,10 @@
   url: https://dataverse.no/dataverse/trolling
   color: var(--global-venue-color)
 
+"MOM":
+  url: https://ojs.novus.no/index.php/MOM
+  color: var(--global-venue-color)
+
 "NALS":
   url: https://journals.uio.no/NALS
   color: var(--global-venue-color)
