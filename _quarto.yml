@@ -1,0 +1,62 @@
+project:
+  type: website
+
+website:
+  title: "Eirik Tengesdal"
+  description: "Eirik Tengesdal is a Norwegian linguist. He is a tenured Assistant Professor of Norwegian at OsloMet, and a Guest Researcher of Linguistics at the University of Oslo."
+  
+  navbar:
+    logo: assets/img/eirik_4643_1200px.jpg
+    logo-alt: "Eirik Tengesdal"
+    title: "Eirik Tengesdal"
+    # background: dark
+    search: true
+    left:
+      - text: "About"
+        href: index.qmd
+      - text: "Publications"
+        href: publications/index.qmd
+      - text: "Repositories"
+        href: repositories/index.qmd
+      # - text: "Research"
+        # href: research/index.qmd
+      - text: "CV"
+        href: cv/index.qmd
+      # - text: "Teaching"
+        # href: teaching/index.qmd
+      # - text: "Projects"
+        # href: projects/index.qmd
+    right:
+      - icon: github
+        href: https://github.com/EirikTengesdal
+      - icon: envelope
+        href: mailto:eirik.tengesdal@oslomet.no
+
+  page-footer:
+    left: |
+      Powered by [Quarto](https://quarto.org) and hosted by [GitHub Pages](https://pages.github.com/).
+    # center: ""
+    # right: |
+      # Photos from [Unsplash](https://unsplash.com).
+
+format:
+  html:
+    theme: 
+      light: pulse
+      dark: [pulse, theme-dark.scss]
+    # css: styles.css
+    toc: true
+    toc-location: right
+    page-layout: article
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 250px
+
+execute:
+  freeze: auto
+
+filters:
+  - quarto
+
+bibliography: assets/bibliography/papers.bib

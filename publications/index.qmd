@@ -1,0 +1,24 @@
+---
+title: "Publications"
+---
+
+For a more extensive overview, view my [Cristin profile](https://app.cristin.no/persons/show.jsf?id=YOUR_CRISTIN_ID).
+
+## Selected Publications
+
+{{< include _selected-papers.qmd >}}
+
+## All Publications
+
+::: {#refs}
+:::
+
+## Conference Presentations
+
+- **Tengesdal, E.** (2024). Title of presentation. *Conference Name*, Location.
+- Add your presentations here...
+
+## Working Papers
+
+- **Tengesdal, E.** (in progress). Title of working paper.
+- Add your working papers here...

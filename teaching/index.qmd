@@ -1,0 +1,65 @@
+---
+title: "Teaching"
+---
+
+## Current Courses
+
+### Course Title (Course Code)
+**Institution:** OsloMet – Oslo Metropolitan University  
+**Level:** Undergraduate/Graduate  
+**Semester:** Fall/Spring 2024
+
+Course description and objectives...
+
+**Topics covered:**
+- Topic 1
+- Topic 2
+- Topic 3
+
+## Past Courses
+
+### Previous Course Title
+**Institution:** University Name  
+**Year:** 2023  
+Brief description...
+
+## Teaching Philosophy
+
+My teaching philosophy centers on...
+
+### Key Principles
+- **Active Learning:** Engaging students through hands-on activities
+- **Inclusive Education:** Creating welcoming environments for all students
+- **Critical Thinking:** Encouraging analytical and creative thinking
+
+## Student Resources
+
+### Course Materials
+- Links to syllabi
+- Reading lists
+- Assignment guidelines
+
+### Office Hours
+- **Location:** Office Q4075, Pilestredet 42
+- **Time:** By appointment
+- **Contact:** eirik.tengesdal@oslomet.no
+
+## Teaching Awards and Recognition
+
+- **Award Name** (Year): Description
+- Add any teaching awards or recognition...
+
+## Professional Development
+
+### Workshops and Training
+- **Workshop Title** (Year): Institution
+- **Teaching Certificate** (Year): Institution
+
+## Supervision
+
+### Current Students
+- **PhD Students:** List current PhD advisees
+- **Master's Students:** List current Master's advisees
+
+### Completed Supervisions
+- **Student Name** (Year): Thesis title

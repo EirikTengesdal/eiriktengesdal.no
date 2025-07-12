@@ -1,0 +1,69 @@
+---
+title: "Projects"
+---
+
+## Current Projects
+
+### Variation and Change in the Scandinavian Verb Phrase
+
+**Role:** PhD Student / Researcher  
+**Funding:** Research Council of Norway (RCN)  
+**Duration:** 2023–2026  
+**Institution:** University of Oslo
+
+This project investigates prosodic variation in Norwegian verb–particle constructions as part of a larger study on Scandinavian verb phrase variation.
+
+**Key objectives:**
+- Map prosodic patterns in Norwegian verb-particle constructions
+- Compare variation across Scandinavian languages
+- Understand factors driving linguistic change
+
+**Methods:**
+- Corpus analysis
+- Experimental phonetics
+- Statistical modeling
+
+[Project website](https://www.hf.uio.no/iln/english/research/projects/variation-and-change-in-the-scandinavian-verb-phra/)
+
+## Past Projects
+
+### Project Title 2
+**Role:** Your role  
+**Duration:** Years  
+**Institution:** Institution name
+
+Brief description of the project...
+
+### Project Title 3
+**Role:** Your role  
+**Duration:** Years  
+**Institution:** Institution name
+
+Brief description of the project...
+
+## Collaborative Projects
+
+### Multi-institutional Project
+**Partners:** List partner institutions  
+**Your role:** Description of your contribution
+
+Description of collaborative work...
+
+## Software and Tools
+
+### Research Tools Developed
+- **Tool Name:** Brief description and link if available
+- **Script/Package:** Description of any code you've shared
+
+### Open Science Contributions
+- **Dataset Name:** Description and repository link
+- **Analysis Code:** GitHub repositories with analysis scripts
+
+## Future Projects
+
+### Proposed Research
+Brief description of planned future work...
+
+### Grant Applications
+- **Grant Name:** Status (submitted/under review/etc.)
+- **Funding Agency:** Amount requested

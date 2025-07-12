@@ -1,0 +1,138 @@
+```{=html}
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/EirikTengesdal/drawmap">
+      <img
+        class="repo-img-light w-100"
+        alt="EirikTengesdal/drawmap"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=drawmap&theme=default&show_owner=false"
+      >
+      <img
+        class="repo-img-dark w-100"
+        alt="EirikTengesdal/drawmap"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=drawmap&theme=dark&show_owner=false"
+      >
+    </a>
+  </div>
+  
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/EirikTengesdal/tufte-inspired">
+      <img
+        class="repo-img-light w-100"
+        alt="EirikTengesdal/tufte-inspired"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=tufte-inspired&theme=default&show_owner=false"
+      >
+      <img
+        class="repo-img-dark w-100"
+        alt="EirikTengesdal/tufte-inspired"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=tufte-inspired&theme=dark&show_owner=false"
+      >
+    </a>
+  </div>
+  
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/EirikTengesdal/TextGrid-scripts">
+      <img
+        class="repo-img-light w-100"
+        alt="EirikTengesdal/TextGrid-scripts"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=TextGrid-scripts&theme=default&show_owner=false"
+      >
+      <img
+        class="repo-img-dark w-100"
+        alt="EirikTengesdal/TextGrid-scripts"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=TextGrid-scripts&theme=dark&show_owner=false"
+      >
+    </a>
+  </div>
+  
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/EirikTengesdal/Whisper-JSON-processing">
+      <img
+        class="repo-img-light w-100"
+        alt="EirikTengesdal/Whisper-JSON-processing"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=Whisper-JSON-processing&theme=default&show_owner=false"
+      >
+      <img
+        class="repo-img-dark w-100"
+        alt="EirikTengesdal/Whisper-JSON-processing"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=Whisper-JSON-processing&theme=dark&show_owner=false"
+      >
+    </a>
+  </div>
+  
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/EirikTengesdal/AudioSlicer">
+      <img
+        class="repo-img-light w-100"
+        alt="EirikTengesdal/AudioSlicer"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=AudioSlicer&theme=default&show_owner=false"
+      >
+      <img
+        class="repo-img-dark w-100"
+        alt="EirikTengesdal/AudioSlicer"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=AudioSlicer&theme=dark&show_owner=false"
+      >
+    </a>
+  </div>
+  
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/EirikTengesdal/Multilada">
+      <img
+        class="repo-img-light w-100"
+        alt="EirikTengesdal/Multilada"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=Multilada&theme=default&show_owner=false"
+      >
+      <img
+        class="repo-img-dark w-100"
+        alt="EirikTengesdal/Multilada"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=Multilada&theme=dark&show_owner=false"
+      >
+    </a>
+  </div>
+  
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/EirikTengesdal/eiriktengesdal.no">
+      <img
+        class="repo-img-light w-100"
+        alt="EirikTengesdal/eiriktengesdal.no"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=eiriktengesdal.no&theme=default&show_owner=false"
+      >
+      <img
+        class="repo-img-dark w-100"
+        alt="EirikTengesdal/eiriktengesdal.no"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=eiriktengesdal.no&theme=dark&show_owner=false"
+      >
+    </a>
+  </div>
+  
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/EirikTengesdal/MapDrawingScriptforR">
+      <img
+        class="repo-img-light w-100"
+        alt="EirikTengesdal/MapDrawingScriptforR"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=MapDrawingScriptforR&theme=default&show_owner=false"
+      >
+      <img
+        class="repo-img-dark w-100"
+        alt="EirikTengesdal/MapDrawingScriptforR"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=EirikTengesdal&repo=MapDrawingScriptforR&theme=dark&show_owner=false"
+      >
+    </a>
+  </div>
+  
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/et-templates/oslomet-document">
+      <img
+        class="repo-img-light w-100"
+        alt="et-templates/oslomet-document"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=et-templates&repo=oslomet-document&theme=default&show_owner=true"
+      >
+      <img
+        class="repo-img-dark w-100"
+        alt="et-templates/oslomet-document"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=et-templates&repo=oslomet-document&theme=dark&show_owner=true"
+      >
+    </a>
+  </div>
+</div>
+```

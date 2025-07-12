@@ -1,0 +1,52 @@
+```{=html}
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/EirikTengesdal">
+      <img
+        class="repo-img-light w-100"
+        alt="EirikTengesdal"
+        src="https://github-readme-stats.vercel.app/api/?username=EirikTengesdal&theme=default&show_icons=true"
+      >
+      <img
+        class="repo-img-dark w-100"
+        alt="EirikTengesdal"
+        src="https://github-readme-stats.vercel.app/api/?username=EirikTengesdal&theme=dark&show_icons=true"
+      >
+    </a>
+  </div>
+  
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/et-templates">
+      <img
+        class="repo-img-light w-100"
+        alt="et-templates"
+        src="https://github-readme-stats.vercel.app/api/?username=et-templates&theme=default&show_icons=true"
+      >
+      <img
+        class="repo-img-dark w-100"
+        alt="et-templates"
+        src="https://github-readme-stats.vercel.app/api/?username=et-templates&theme=dark&show_icons=true"
+      >
+    </a>
+  </div>
+</div>
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/ryo-ma/github-profile-trophy">
+      <span class="d-none d-sm-none d-md-block">
+        <img
+          class="repo-img-light"
+          alt="EirikTengesdal"
+          src="https://github-profile-trophy.vercel.app/?username=EirikTengesdal&theme=flat&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=6"
+        >
+        <img
+          class="repo-img-dark"
+          alt="EirikTengesdal"
+          src="https://github-profile-trophy.vercel.app/?username=EirikTengesdal&theme=darkhub&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=6"
+        >
+      </span>
+    </a>
+  </div>
+</div>
+```

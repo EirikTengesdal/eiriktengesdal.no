@@ -1,0 +1,12 @@
+## Selected Publications
+
+<!-- 
+To mark papers as selected, add 'selected: true' to your bibliography entries
+and they will appear here automatically when using the bibliography filter
+-->
+
+<!-- Example of manually added selected papers -->
+- **Tengesdal, E.** (2024). Example paper title. *Journal Name*, 1(1), 1-10.
+- **Tengesdal, E.** & Coauthor, A. (2023). Another example paper. *Conference Proceedings*, 123-130.
+
+<!-- You can also use Quarto's bibliography features with filters -->

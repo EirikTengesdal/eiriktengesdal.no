@@ -1,0 +1,95 @@
+---
+title: "Curriculum Vitae"
+format:
+  html:
+    toc: true
+---
+
+<!-- Download PDF button -->
+::: {.text-center}
+[Download PDF](cv.pdf){.btn .btn-outline-primary}
+:::
+
+## Education
+
+**PhD in Linguistics** (in progress)  
+*University of Oslo*, Norway  
+Dissertation: "Prosodic Variation in Norwegian Verb–Particle Constructions"  
+Supervisor: [Supervisor Name]
+
+**Master's Degree**  
+*University Name*, Year  
+Thesis: "Title of thesis"
+
+**Bachelor's Degree**  
+*University Name*, Year
+
+## Employment
+
+**Assistant Professor of Norwegian** (2024–present)  
+*OsloMet – Oslo Metropolitan University*  
+Department of Early Childhood Education (BLU)
+
+**Guest Researcher of Linguistics** (2024–present)  
+*University of Oslo*  
+Department of Linguistics and Scandinavian Studies (ILN)
+
+## Publications
+
+See [Publications page](../publications/index.qmd) for a complete list.
+
+## Conference Presentations
+
+- **Tengesdal, E.** (2024). Title of presentation. *Conference Name*, Location.
+- Add your presentations...
+
+## Teaching
+
+### Courses Taught
+
+**University Course Title** (Year)  
+*Institution Name*  
+- Course description
+- Student level (undergraduate/graduate)
+
+### Teaching Philosophy
+
+Brief description of your teaching approach...
+
+## Grants and Funding
+
+- **Grant Name** (Year). Amount. Funding agency.
+- Add your grants...
+
+## Professional Service
+
+### Editorial Work
+- Journal reviewer for: *Journal Names*
+
+### Committee Work
+- Committee positions...
+
+### Professional Memberships
+- Professional organizations...
+
+## Skills
+
+### Languages
+- Norwegian (native)
+- English (fluent)
+- Add other languages...
+
+### Technical Skills
+- R, Python, Praat
+- Statistical analysis
+- Corpus linguistics tools
+- Add your skills...
+
+## Awards and Honors
+
+- **Award Name** (Year). Institution.
+- Add your awards...
+
+---
+
+*Last updated: January 2025*

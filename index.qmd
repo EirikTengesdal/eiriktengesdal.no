@@ -1,0 +1,30 @@
+---
+title: "About"
+image: assets/img/eirik_4643_1200px.jpg
+about:
+  template: trestles
+  image-width: 15em
+  image-shape: rectangle
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/EirikTengesdal
+    - icon: envelope
+      text: Email
+      href: mailto:eirik.tengesdal@oslomet.no
+    - text: "{{< ai orcid >}} ORCID"
+      href: https://orcid.org/0000-0000-0000-0000
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/
+---
+
+I am a tenured [Assistant Professor of Norwegian](https://www.oslomet.no/en/about/employee/eiten9710/) at the Department of Early Childhood Education (BLU) at OsloMet – Oslo Metropolitan University. I am also a [Guest Researcher of Linguistics](https://www.hf.uio.no/iln/english/people/aca/scandinavian-languages/temporary/eirikten/) at the Department of Linguistics and Scandinavian Studies (ILN) at the University of Oslo (UiO).
+
+Further, I am a PhD Student at UiO specialising in Scandinavian linguistics. My PhD project involves exploring prosodic variation in Norwegian verb–particle constructions. The project is connected to the RCN funded project [Variation and Change in the Scandinavian Verb Phrase](https://www.hf.uio.no/iln/english/research/projects/variation-and-change-in-the-scandinavian-verb-phra/).
+
+## Academic Interests
+
+- Scandinavian languages
+- Clinical linguistics and language acquisition
+- Multilingualism
+- Phonetics, phonology and prosody

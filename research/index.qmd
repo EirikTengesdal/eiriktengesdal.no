@@ -1,0 +1,41 @@
+---
+title: "Research"
+---
+
+## Current Research Projects
+
+### Prosodic Variation in Norwegian Verb–Particle Constructions
+
+My PhD project investigates prosodic variation in Norwegian verb–particle constructions. This research is part of the RCN funded project [Variation and Change in the Scandinavian Verb Phrase](https://www.hf.uio.no/iln/english/research/projects/variation-and-change-in-the-scandinavian-verb-phra/).
+
+**Key research questions:**
+- How does prosodic variation manifest in Norwegian verb-particle constructions?
+- What factors influence this variation?
+- How does this compare across Scandinavian languages?
+
+## Research Interests
+
+### Scandinavian Languages
+Description of your work in Scandinavian languages...
+
+### Clinical Linguistics and Language Acquisition
+Description of your work in clinical linguistics...
+
+### Multilingualism
+Description of your multilingualism research...
+
+### Phonetics, Phonology and Prosody
+Description of your phonetics/phonology work...
+
+## Methodology
+
+- Corpus linguistics
+- Experimental phonetics
+- Statistical analysis
+- Add your methods here...
+
+## Collaborations
+
+- **University of Oslo** - Department of Linguistics and Scandinavian Studies
+- **OsloMet** - Department of Early Childhood Education
+- Add other collaborations...

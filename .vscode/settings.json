@@ -3,5 +3,6 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[scss]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  }
+  },
+  "DockerRun.DisableDockerrc": true
 }

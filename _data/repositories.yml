@@ -1,11 +1,14 @@
 github_users:
   - EirikTengesdal
+  - et-templates
 
 github_repos:
   - EirikTengesdal/drawmap
+  - EirikTengesdal/tufte-inspired
   - EirikTengesdal/TextGrid-scripts
   - EirikTengesdal/Whisper-JSON-processing
   - EirikTengesdal/AudioSlicer
   - EirikTengesdal/Multilada
   - EirikTengesdal/eiriktengesdal.no
   - EirikTengesdal/MapDrawingScriptforR
+  - et-templates/oslomet-document
