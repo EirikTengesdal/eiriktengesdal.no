@@ -96,7 +96,7 @@ return {
 
 
     -- detect html (excluding epub)
-    if quarto.doc.isFormat("html:js") then
+    if quarto.doc.is_format("html:js") then
       ensureHtmlDeps()
       if not isEmpty(hsize) then
         size = hsize

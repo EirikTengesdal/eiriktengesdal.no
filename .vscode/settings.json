@@ -1,8 +1,13 @@
 {
-  "remote.WSL.debug": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "[quarto]": {
+    "editor.wordWrap": "on"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  },
   "[scss]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "DockerRun.DisableDockerrc": true
+  }
 }

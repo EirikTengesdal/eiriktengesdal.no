@@ -1,50 +1,66 @@
 project:
   type: website
+  output-dir: _site
+  resources:
+    - CNAME
+    - .nojekyll
+    - robots.txt
+
+profile:
+  default: en
+
+lang: en
 
 website:
   title: "Eirik Tengesdal"
-  description: "Eirik Tengesdal is a Norwegian linguist. He is a tenured Assistant Professor of Norwegian at OsloMet, and a Guest Researcher of Linguistics at the University of Oslo."
-  
+  site-url: https://eiriktengesdal.no
+  description: "Eirik Tengesdal is a Norwegian linguist, Assistant Professor of Norwegian at OsloMet – Oslo Metropolitan University and Guest Researcher of Linguistics at the University of Oslo."
+  favicon: assets/favicon/light_favicon-32x32.png
+  open-graph: true
+  search:
+    location: navbar
+    type: overlay
   navbar:
     logo: assets/img/eirik_4643_1200px.jpg
     logo-alt: "Eirik Tengesdal"
     title: "Eirik Tengesdal"
-    # background: dark
-    search: true
-    left:
-      - text: "About"
-        href: index.qmd
-      - text: "Publications"
-        href: publications/index.qmd
-      - text: "Repositories"
-        href: repositories/index.qmd
-      # - text: "Research"
-        # href: research/index.qmd
-      - text: "CV"
-        href: cv/index.qmd
-      # - text: "Teaching"
-        # href: teaching/index.qmd
-      # - text: "Projects"
-        # href: projects/index.qmd
     right:
       - icon: github
         href: https://github.com/EirikTengesdal
+        aria-label: GitHub
       - icon: envelope
         href: mailto:eirik.tengesdal@oslomet.no
-
+        aria-label: E-mail
   page-footer:
+    # %%BUILD_YEAR%% and %%BUILD_STAMP%% are replaced by tools/post_build.py with the render date and time.
     left: |
-      Powered by [![](https://quarto.org/quarto.png){width="20%"}](https://quarto.org/) and hosted by [![](https://pages.github.com/images/logo.svg){width="20%" .github-pages-logo}](https://pages.github.com/).
-    # center: ""
-    # right: |
-      # Photos from [Unsplash](https://unsplash.com).
+      <span class="footer-credits"><span class="nowrap">© %%BUILD_YEAR%% Eirik Tengesdal</span><span class="footer-sep">·</span><span class="nowrap">Last updated %%BUILD_STAMP%%</span><span class="footer-sep">·</span><span class="nowrap">Built with <a href="https://quarto.org/"><img src="https://quarto.org/quarto.png" alt="Quarto" class="footer-logo"></a></span><span class="nowrap">and hosted on <a href="https://pages.github.com/"><img src="https://pages.github.com/images/logo.svg" alt="GitHub Pages" class="footer-logo github-pages-logo"></a></span></span>
+    right: |
+      [NVA](https://nva.sikt.no/research-profile/446915) · [ORCID](https://orcid.org/0000-0003-0599-8925) · [Google Scholar](https://scholar.google.com/citations?user=Dr2Q9hwAAAAJ)
+
+babelquarto:
+  languagelinks: navbar
+  mainlanguage: en
+  # English only. The nb/nn/ja/pt sources (profiles, About, statements) are kept in the private CV repository
+  # (et-curriculum-vitae/site-translations) until audited; copy them back and list the language here to enable it.
+  languages: []
+  languagecodes:
+    - name: en
+      text: English
+    - name: nb
+      text: Bokmål
+    - name: nn
+      text: Høgnorsk
+    - name: ja
+      text: 日本語
+    - name: pt
+      text: Português (Brasil)
 
 format:
   html:
-    theme: 
+    theme:
       light: [pulse, custom.scss]
       dark: [pulse, theme-dark.scss]
-    # css: styles.css
     toc: true
     toc-location: right
     page-layout: article
@@ -52,11 +68,22 @@ format:
       sidebar-width: 250px
       body-width: 900px
       margin-width: 250px
+    link-external-newwindow: true
+    include-in-header:
+      - text: |
+          <script type="application/ld+json">
+          {"@context": "https://schema.org", "@type": "Person", "name": "Eirik Tengesdal",
+           "url": "https://eiriktengesdal.no/", "jobTitle": "Assistant Professor of Norwegian",
+           "affiliation": [{"@type": "Organization", "name": "OsloMet – Oslo Metropolitan University"},
+                           {"@type": "Organization", "name": "University of Oslo"}],
+           "sameAs": ["https://nva.sikt.no/research-profile/446915",
+                      "https://orcid.org/0000-0003-0599-8925",
+                      "https://scholar.google.com/citations?user=Dr2Q9hwAAAAJ",
+                      "https://github.com/EirikTengesdal",
+                      "https://osf.io/h9rg7",
+                      "https://www.researchgate.net/profile/Eirik-Tengesdal",
+                      "https://www.linkedin.com/in/eirik-tengesdal-7b8b6166"]}
+          </script>
 
 execute:
   freeze: auto
-
-filters:
-  - quarto
-
-bibliography: assets/bibliography/papers.bib

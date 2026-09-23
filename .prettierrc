@@ -1,4 +1,0 @@
-{
-  "plugins": ["@shopify/prettier-plugin-liquid"],
-  "endOfLine": "auto"
-}
