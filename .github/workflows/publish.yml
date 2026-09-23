@@ -25,17 +25,20 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       # R from Ubuntu's own repository: no dependency on the R-hub version resolver that
-      # r-lib/actions/setup-r needs (it failed twice on 2026-09-23).
+      # r-lib/actions/setup-r needs (it failed twice on 2026-09-23). Packages go to a user
+      # library because the system site-library is not writable by the runner user.
       - name: Set up R
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq r-base r-base-dev libcurl4-openssl-dev libssl-dev libxml2-dev
+          mkdir -p "$HOME/R/library"
+          echo "R_LIBS_USER=$HOME/R/library" >> "$GITHUB_ENV"
           R --version | head -n 1
 
       # babelquarto is not on CRAN: install it from the rOpenSci R-universe.
       - name: Install babelquarto
         run: |
-          Rscript -e 'install.packages("babelquarto", repos = c("https://ropensci.r-universe.dev", "https://cloud.r-project.org"), Ncpus = 2)'
+          Rscript -e 'install.packages("babelquarto", lib = Sys.getenv("R_LIBS_USER"), repos = c("https://ropensci.r-universe.dev", "https://cloud.r-project.org"), Ncpus = 2)'
           Rscript -e 'stopifnot(requireNamespace("babelquarto", quietly = TRUE)); message("babelquarto ", packageVersion("babelquarto"))'
 
       - name: Set up Python
