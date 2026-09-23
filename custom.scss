@@ -1,83 +1,118 @@
 /*-- scss:defaults --*/
 
-// Colors
-$primary: #2E8B57 !default;      // Sea green
-$secondary: #6C757D !default;    // Gray
-$success: #198754 !default;      // Green
-$info: #0DCAF0 !default;         // Cyan
-$warning: #FFC107 !default;      // Yellow
-$danger: #DC3545 !default;       // Red
-$light: #F8F9FA !default;        // Light gray
-$dark: #212529 !default;         // Dark gray
-
-// Fonts
-$font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$font-family-monospace: "Source Code Pro", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-
-// Font sizes
-$font-size-base: 1.1rem !default;
-$h1-font-size: 2.5rem !default;
-$h2-font-size: 2rem !default;
-$h3-font-size: 1.75rem !default;
-
-// Navigation
-$navbar-brand-font-size: 1.5rem !default;
-$navbar-nav-link-padding-x: 1rem !default;
+// Use Bootswatch Pulse theme colors
+$primary: #593196 !default;      // Pulse purple
+$secondary: #a991d4 !default;    // Pulse light purple
+$success: #13b955 !default;      // Pulse green
+$info: #009cdc !default;         // Pulse cyan
+$warning: #efa31d !default;      // Pulse yellow
+$danger: #fc3939 !default;       // Pulse red
+$light: #f9f8fc !default;        // Pulse light
+$dark: #17141f !default;         // Pulse dark
 
 /*-- scss:rules --*/
 
-// Custom styles
-.navbar-brand {
-  font-weight: 600;
+// Bootswatch Pulse light theme CSS custom properties
+:root, [data-bs-theme="light"] {
+  --bs-blue: #007bff;
+  --bs-indigo: #6610f2;
+  --bs-purple: #593196;
+  --bs-pink: #e83e8c;
+  --bs-red: #fc3939;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #efa31d;
+  --bs-green: #13b955;
+  --bs-teal: #20c997;
+  --bs-cyan: #009cdc;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #868e96;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #fafafa;
+  --bs-gray-200: #f9f8fc;
+  --bs-gray-300: #ededed;
+  --bs-gray-400: #cbc8d0;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #868e96;
+  --bs-gray-700: #444;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #17141f;
+  --bs-primary: #593196;
+  --bs-secondary: #a991d4;
+  --bs-success: #13b955;
+  --bs-info: #009cdc;
+  --bs-warning: #efa31d;
+  --bs-danger: #fc3939;
+  --bs-light: #f9f8fc;
+  --bs-dark: #17141f;
+  --bs-primary-rgb: 89, 49, 150;
+  --bs-secondary-rgb: 169, 145, 212;
+  --bs-success-rgb: 19, 185, 85;
+  --bs-info-rgb: 0, 156, 220;
+  --bs-warning-rgb: 239, 163, 29;
+  --bs-danger-rgb: 252, 57, 57;
+  --bs-light-rgb: 249, 248, 252;
+  --bs-dark-rgb: 23, 20, 31;
+  --bs-primary-text-emphasis: #24143c;
+  --bs-secondary-text-emphasis: #443a55;
+  --bs-success-text-emphasis: #084a22;
+  --bs-info-text-emphasis: #003e58;
+  --bs-warning-text-emphasis: #60410c;
+  --bs-danger-text-emphasis: #651717;
+  --bs-light-text-emphasis: #444;
+  --bs-dark-text-emphasis: #444;
+  --bs-primary-bg-subtle: #ded6ea;
+  --bs-secondary-bg-subtle: #eee9f6;
+  --bs-success-bg-subtle: #d0f1dd;
+  --bs-info-bg-subtle: #ccebf8;
+  --bs-warning-bg-subtle: #fcedd2;
+  --bs-danger-bg-subtle: #fed7d7;
+  --bs-light-bg-subtle: #fdfdfd;
+  --bs-dark-bg-subtle: #cbc8d0;
+  --bs-primary-border-subtle: #bdadd5;
+  --bs-secondary-border-subtle: #ddd3ee;
+  --bs-success-border-subtle: #a1e3bb;
+  --bs-info-border-subtle: #99d7f1;
+  --bs-warning-border-subtle: #f9daa5;
+  --bs-danger-border-subtle: #feb0b0;
+  --bs-light-border-subtle: #f9f8fc;
+  --bs-dark-border-subtle: #adb5bd;
+  --bs-body-color: #444;
+  --bs-body-color-rgb: 68, 68, 68;
+  --bs-body-bg: #fff;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-emphasis-color: #000;
+  --bs-emphasis-color-rgb: 0, 0, 0;
+  --bs-secondary-color: rgba(68, 68, 68, 0.75);
+  --bs-secondary-color-rgb: 68, 68, 68;
+  --bs-secondary-bg: #f9f8fc;
+  --bs-secondary-bg-rgb: 249, 248, 252;
+  --bs-tertiary-color: rgba(68, 68, 68, 0.5);
+  --bs-tertiary-color-rgb: 68, 68, 68;
+  --bs-tertiary-bg: #fafafa;
+  --bs-tertiary-bg-rgb: 250, 250, 250;
+  --bs-heading-color: inherit;
+  --bs-link-color: #593196;
+  --bs-link-color-rgb: 89, 49, 150;
+  --bs-link-hover-color: #593196;
+  --bs-link-hover-color-rgb: 89, 49, 150;
+  --bs-code-color: #e83e8c;
+  --bs-highlight-color: #444;
+  --bs-highlight-bg: #fcedd2;
+  --bs-border-color: #ededed;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-focus-ring-color: rgba(89, 49, 150, 0.25);
+  --bs-form-valid-color: #13b955;
+  --bs-form-valid-border-color: #13b955;
+  --bs-form-invalid-color: #fc3939;
+  --bs-form-invalid-border-color: #fc3939;
 }
 
-.quarto-about-trestles .about-entity .about-link {
-  background-color: $primary;
-  border-color: $primary;
-  color: white;
-  
-  &:hover {
-    background-color: darken($primary, 10%);
-    border-color: darken($primary, 10%);
-  }
-}
-
-// Academic icons
-.ai {
-  font-size: 1.2em;
-  line-height: 1;
-}
-
-// Publication styling
-.publication-item {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
-  
-  &:last-child {
-    border-bottom: none;
-  }
-}
-
-// CV styling
-.cv-section {
-  margin-bottom: 2rem;
-  
-  h3 {
-    color: $primary;
-    margin-bottom: 1rem;
-  }
-}
-
-// Code blocks
-.sourceCode {
-  background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 0.375rem;
-}
-
-// Responsive images
-img {
-  max-width: 100%;
-  height: auto;
+// GitHub Pages logo styling (applies to both light and dark themes)
+.github-pages-logo {
+  background-color: #000 !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+  display: inline-block !important;
 }

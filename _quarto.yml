@@ -34,7 +34,7 @@ website:
 
   page-footer:
     left: |
-      Powered by [Quarto](https://quarto.org) and hosted by [GitHub Pages](https://pages.github.com/).
+      Powered by [![](https://quarto.org/quarto.png){width="20%"}](https://quarto.org/) and hosted by [![](https://pages.github.com/images/logo.svg){width="20%" .github-pages-logo}](https://pages.github.com/).
     # center: ""
     # right: |
       # Photos from [Unsplash](https://unsplash.com).
@@ -42,7 +42,7 @@ website:
 format:
   html:
     theme: 
-      light: pulse
+      light: [pulse, custom.scss]
       dark: [pulse, theme-dark.scss]
     # css: styles.css
     toc: true
