@@ -174,3 +174,8 @@ body.quarto-dark .repo-img-light { display: none; }
 .pub-entry .pub-links { text-indent: 0; }
 .pub-entry .collapse pre, .pub-entry .collapsing pre, .pub-entry pre code { white-space: pre-wrap; overflow-wrap: anywhere; }
 .pub-note { display: block; font-size: 0.9em; color: var(--bs-secondary-color); }
+
+/*-- centred footer --*/
+.nav-footer .nav-footer-center { text-align: center; }
+.footer-credits { justify-content: center; }
+.footer-profiles { display: inline-block; margin-top: 0.35em; }
