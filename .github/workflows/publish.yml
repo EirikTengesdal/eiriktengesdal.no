@@ -35,10 +35,14 @@ jobs:
           echo "R_LIBS_USER=$HOME/R/library" >> "$GITHUB_ENV"
           R --version | head -n 1
 
-      # babelquarto is not on CRAN: install it from the rOpenSci R-universe.
+      # Dependencies come as Linux binaries from Posit Package Manager (the user agent makes it
+      # serve binaries; compiling fs and friends from source failed); babelquarto itself is not on
+      # CRAN and is installed from GitHub (rOpenSci).
       - name: Install babelquarto
+        env:
+          GITHUB_PAT: ${{ github.token }}
         run: |
-          Rscript -e 'install.packages("babelquarto", lib = Sys.getenv("R_LIBS_USER"), repos = c("https://ropensci.r-universe.dev", "https://cloud.r-project.org"), Ncpus = 2)'
+          Rscript -e 'options(HTTPUserAgent = sprintf("R/%s R (%s)", getRversion(), paste(getRversion(), R.version["platform"], R.version["arch"], R.version["os"])), repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/noble/latest")); install.packages("remotes", lib = Sys.getenv("R_LIBS_USER")); remotes::install_github("ropensci/babelquarto", lib = Sys.getenv("R_LIBS_USER"), upgrade = "never")'
           Rscript -e 'stopifnot(requireNamespace("babelquarto", quietly = TRUE)); message("babelquarto ", packageVersion("babelquarto"))'
 
       - name: Set up Python
