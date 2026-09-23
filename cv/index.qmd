@@ -69,7 +69,7 @@ University of Oslo (UiO) – Department of Linguistics and Scandinavian Studies 
 [University of Oslo](https://www.hf.uio.no/iln/english/)\
 [*Dissertation:* *Prosodic and Syntactic Variation in Norwegian Particle Verbs* (working title)]{.cv-detail}\
 [*Advisors:* Prof. Ida Larsson, Prof. Björn Lundquist, Assoc. Prof. Sara Myrberg and Prof. em. Helge Lødrup]{.cv-detail}\
-[*Exchange:* University of California, Santa Cruz, spring 2020]{.cv-detail}\
+[*Exchange:* [University of California, Santa Cruz](https://www.ucsc.edu/), spring 2020]{.cv-detail}\
 [Connected to the RCN-funded project [Variation and Change in the Scandinavian Verb Phrase](https://www.hf.uio.no/iln/english/research/projects/variation-and-change-in-the-scandinavian-verb-phra/)]{.cv-detail}
 :::
 :::
@@ -95,7 +95,7 @@ University of Oslo (UiO) – Department of Linguistics and Scandinavian Studies 
 ::: {.cv-body}
 **Bachelor of Arts (BA)** – Japanese language (major); linguistics, English and Chinese (minors)\
 [University of Oslo](https://www.hf.uio.no/iln/english/)\
-[*Exchange:* Jōsai International University, Japan, autumn 2010]{.cv-detail}
+[*Exchange:* [Jōsai International University](https://www.jiu.ac.jp/), Japan, autumn 2010]{.cv-detail}
 :::
 :::
 
