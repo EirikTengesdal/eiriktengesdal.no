@@ -27,22 +27,32 @@ jobs:
       # R from Ubuntu's own repository: no dependency on the R-hub version resolver that
       # r-lib/actions/setup-r needs (it failed twice on 2026-09-23). Packages go to a user
       # library because the system site-library is not writable by the runner user.
+      # libuv1-dev lets the fs package compile should a binary ever be unavailable.
       - name: Set up R
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq r-base r-base-dev libcurl4-openssl-dev libssl-dev libxml2-dev
+          sudo apt-get install -y -qq r-base r-base-dev libcurl4-openssl-dev libssl-dev libxml2-dev libuv1-dev
           mkdir -p "$HOME/R/library"
           echo "R_LIBS_USER=$HOME/R/library" >> "$GITHUB_ENV"
           R --version | head -n 1
 
       # Dependencies come as Linux binaries from Posit Package Manager (the user agent makes it
-      # serve binaries; compiling fs and friends from source failed); babelquarto itself is not on
-      # CRAN and is installed from GitHub (rOpenSci).
+      # serve binaries). babelquarto itself is not on CRAN: its dependencies are read from the
+      # rOpenSci R-universe index, installed from Posit, and then the pure-R package is installed
+      # from the R-universe without touching the GitHub API.
       - name: Install babelquarto
-        env:
-          GITHUB_PAT: ${{ github.token }}
         run: |
-          Rscript -e 'options(HTTPUserAgent = sprintf("R/%s R (%s)", getRversion(), paste(getRversion(), R.version["platform"], R.version["arch"], R.version["os"])), repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/noble/latest")); install.packages("remotes", lib = Sys.getenv("R_LIBS_USER")); remotes::install_github("ropensci/babelquarto", lib = Sys.getenv("R_LIBS_USER"), upgrade = "never")'
+          Rscript -e '
+            options(HTTPUserAgent = sprintf("R/%s R (%s)", getRversion(), paste(getRversion(), R.version["platform"], R.version["arch"], R.version["os"])),
+                    repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/noble/latest"))
+            lib <- Sys.getenv("R_LIBS_USER")
+            ru <- "https://ropensci.r-universe.dev"
+            ap <- available.packages(repos = ru)
+            deps <- setdiff(tools::package_dependencies("babelquarto", db = ap)[[1]], rownames(installed.packages()))
+            message("dependencies from Posit: ", paste(deps, collapse = ", "))
+            if (length(deps)) install.packages(deps, lib = lib, Ncpus = 2)
+            install.packages("babelquarto", lib = lib, repos = ru, dependencies = FALSE)
+          '
           Rscript -e 'stopifnot(requireNamespace("babelquarto", quietly = TRUE)); message("babelquarto ", packageVersion("babelquarto"))'
 
       - name: Set up Python
