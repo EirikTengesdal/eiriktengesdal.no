@@ -1,0 +1,26 @@
+lang: en
+project:
+  resources:
+    - "cv/*.pdf"
+    - "publications/*.bib"
+website:
+  navbar:
+    left:
+      - text: About
+        href: index.qmd
+      - text: Publications
+        href: publications/index.qmd
+      # After the audit, rebuild with `build.py --web-pages full` and restore the dropdown:
+      # - text: Publications
+      #   menu:
+      #     - {text: Overview, href: publications/index.qmd}
+      #     - {text: Articles and chapters, href: publications/articles.qmd}
+      #     - {text: Talks and posters, href: publications/talks.qmd}
+      #     - {text: Data and software, href: publications/data.qmd}
+      #     - {text: Outreach and media, href: publications/outreach.qmd}
+      - text: Repositories
+        href: repositories/index.qmd
+      - text: CV
+        href: cv/index.qmd
+      - text: Statements
+        href: statements/index.qmd

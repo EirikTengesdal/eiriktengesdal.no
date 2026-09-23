@@ -1,0 +1,31 @@
+---
+title: "Repositories"
+description: "Public code and data repositories on GitHub, with live statistics."
+toc: false
+---
+
+My public repositories on [GitHub](https://github.com/EirikTengesdal?tab=repositories&type=public). The cards are drawn live by [github-stats-extended](https://github.com/stats-organization/github-stats-extended), the maintained successor of the github-readme-stats cards used on the previous version of this site.
+
+## GitHub profile
+
+```{=html}
+<div class="repo-cards repo-cards-single">
+<a class="repo-card" href="https://github.com/EirikTengesdal"><img src="https://github-stats-extended.vercel.app/api?username=EirikTengesdal&amp;show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented%2Ccontributions%2Call_time_contribs&amp;show_icons=true&amp;include_all_commits=true&amp;theme=ambient_gradient" alt="GitHub statistics for EirikTengesdal"></a>
+</div>
+```
+
+## Repositories
+
+```{=html}
+<div class="repo-cards">
+<a class="repo-card" href="https://github.com/EirikTengesdal/drawmap"><img src="https://github-stats-extended.vercel.app/api/pin/?username=EirikTengesdal&amp;repo=drawmap&amp;theme=ambient_gradient&amp;show_owner=false" alt="EirikTengesdal/drawmap"></a>
+<a class="repo-card" href="https://github.com/EirikTengesdal/MapDrawingScriptforR"><img src="https://github-stats-extended.vercel.app/api/pin/?username=EirikTengesdal&amp;repo=MapDrawingScriptforR&amp;theme=ambient_gradient&amp;show_owner=false" alt="EirikTengesdal/MapDrawingScriptforR"></a>
+<a class="repo-card" href="https://github.com/EirikTengesdal/TextGrid-scripts"><img src="https://github-stats-extended.vercel.app/api/pin/?username=EirikTengesdal&amp;repo=TextGrid-scripts&amp;theme=ambient_gradient&amp;show_owner=false" alt="EirikTengesdal/TextGrid-scripts"></a>
+<a class="repo-card" href="https://github.com/EirikTengesdal/Whisper-JSON-processing"><img src="https://github-stats-extended.vercel.app/api/pin/?username=EirikTengesdal&amp;repo=Whisper-JSON-processing&amp;theme=ambient_gradient&amp;show_owner=false" alt="EirikTengesdal/Whisper-JSON-processing"></a>
+<a class="repo-card" href="https://github.com/EirikTengesdal/AudioSlicer"><img src="https://github-stats-extended.vercel.app/api/pin/?username=EirikTengesdal&amp;repo=AudioSlicer&amp;theme=ambient_gradient&amp;show_owner=false" alt="EirikTengesdal/AudioSlicer"></a>
+<a class="repo-card" href="https://github.com/EirikTengesdal/ProsodyIsAwesome"><img src="https://github-stats-extended.vercel.app/api/pin/?username=EirikTengesdal&amp;repo=ProsodyIsAwesome&amp;theme=ambient_gradient&amp;show_owner=false" alt="EirikTengesdal/ProsodyIsAwesome"></a>
+<a class="repo-card" href="https://github.com/EirikTengesdal/eiriktengesdal.no"><img src="https://github-stats-extended.vercel.app/api/pin/?username=EirikTengesdal&amp;repo=eiriktengesdal.no&amp;theme=ambient_gradient&amp;show_owner=false" alt="EirikTengesdal/eiriktengesdal.no"></a>
+<a class="repo-card" href="https://github.com/EirikTengesdal/Multilada"><img src="https://github-stats-extended.vercel.app/api/pin/?username=EirikTengesdal&amp;repo=Multilada&amp;theme=ambient_gradient&amp;show_owner=true" alt="EirikTengesdal/Multilada (fork)"></a>
+<a class="repo-card" href="https://github.com/EirikTengesdal/tufte-inspired"><img src="https://github-stats-extended.vercel.app/api/pin/?username=EirikTengesdal&amp;repo=tufte-inspired&amp;theme=ambient_gradient&amp;show_owner=true" alt="EirikTengesdal/tufte-inspired (fork)"></a>
+</div>
+```

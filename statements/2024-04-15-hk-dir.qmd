@@ -1,0 +1,16 @@
+---
+title: "Hearing statement on the proposed regulations concerning teaching and research posts and recruitment posts"
+description: "Høringssvar to HK-dir on *Forslag til forskrift om undervisnings- og forskningsstillinger og rekrutteringsstillinger*, case 24/00075."
+date: 2024-04-15
+language-code: en
+categories: [hearing statement]
+---
+
+Direktoratet for høyere utdanning og kompetanse (HK-dir; the Norwegian Directorate for Higher Education and Skills) released [a new regulations proposal](https://hkdir.no/dokumenter/forslag-til-forskrift-om-undervisnings-og-forskningsstillinger-og-rekrutteringsstillinger) for public consultation (case number [24/00075](https://hkdir.no/hoyere-utdanning-og-forskning/horing-forslag-til-forskrift-om-undervisnings-og-forskningsstillinger-og-rekrutteringsstillinger); deadline 19 April 2024). I submitted a statement to HK-dir on 15 April 2024.
+
+PDF copy (with two minor corrections): [Download the statement](/assets/pdf/statements/2024-04-15_hoeringssvar_hk-dir.pdf){.btn .btn-outline-primary}
+
+```{=html}
+<div class="pdf-preview" data-pdf="/assets/pdf/statements/2024-04-15_hoeringssvar_hk-dir.pdf" data-label="Hearing statement PDF"><p class="text-muted small">Loading the PDF preview …</p></div>
+<script type="module" src="/assets/js/pdf-preview.js"></script>
+```

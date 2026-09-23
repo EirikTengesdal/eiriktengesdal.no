@@ -1,0 +1,5 @@
+---
+title: "Page not found"
+---
+
+The page you asked for does not exist or has moved. Try the [start page](/), the [publications](/publications/) or the [CV](/cv/).

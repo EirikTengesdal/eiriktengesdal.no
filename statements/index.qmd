@@ -1,0 +1,12 @@
+---
+title: "Statements"
+description: "Response statements to public consultations (*høringer*)."
+listing:
+  contents: "*.qmd"
+  include:
+    language-code: en
+  sort: "date desc"
+  type: default
+  fields: [date, title, description]
+  date-format: "D MMMM YYYY"
+---

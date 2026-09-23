@@ -1,0 +1,44 @@
+---
+title: "About"
+image: assets/img/eirik_4643_1200px.jpg
+about:
+  template: trestles
+  image-width: 15em
+  image-shape: rectangle
+  links:
+    - icon: archive
+      text: NVA
+      href: https://nva.sikt.no/research-profile/446915
+    - text: "{{< ai orcid >}} ORCID"
+      href: https://orcid.org/0000-0003-0599-8925
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=Dr2Q9hwAAAAJ
+    - text: "{{< ai osf >}} OSF"
+      href: https://osf.io/h9rg7
+    - text: "{{< ai researchgate >}} ResearchGate"
+      href: https://www.researchgate.net/profile/Eirik-Tengesdal
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/eirik-tengesdal-7b8b6166
+    - icon: github
+      text: GitHub
+      href: https://github.com/EirikTengesdal
+    - icon: envelope
+      text: E-mail
+      href: mailto:eirik.tengesdal@oslomet.no
+---
+
+I am a tenured [Assistant Professor of Norwegian](https://www.oslomet.no/en/about/employee/eiten9710/) at the Department of Early Childhood Education (BLU), OsloMet – Oslo Metropolitan University, and a Guest Researcher of Linguistics at the Department of Linguistics and Scandinavian Studies (ILN), University of Oslo (UiO).
+
+<!-- TODO (Eirik): confirm PhD status and wording. -->
+My PhD project at UiO explores prosodic variation in Norwegian verb–particle constructions and is connected to the RCN-funded project [Variation and Change in the Scandinavian Verb Phrase](https://www.hf.uio.no/iln/english/research/projects/variation-and-change-in-the-scandinavian-verb-phra/).
+
+## Research interests
+
+- Child language and language acquisition
+- Clinical linguistics
+- Phonetics, phonology and prosody
+- Multilingualism
+- Scandinavian languages and dialectology
+- Psycholinguistics
+- Corpus linguistics
