@@ -72,4 +72,5 @@ jobs:
           folder: _site
           branch: gh-pages
           clean: true
-          single-commit: true
+          single-commit: false   # the ruleset forbids force-pushes on every branch, so gh-pages keeps its history
+          force: false
