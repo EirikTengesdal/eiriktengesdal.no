@@ -34,8 +34,7 @@ jobs:
       - name: Install babelquarto
         run: |
           Rscript -e 'install.packages("babelquarto", repos = c("https://ropensci.r-universe.dev", "https://packagemanager.posit.co/cran/__linux__/noble/latest"))'
-          Rscript -e 'stopifnot(requireNamespace("babelquarto", quietly = TRUE)); cat("babelquarto", as.character(packageVersion("babelquarto")), "
-")'
+          Rscript -e 'stopifnot(requireNamespace("babelquarto", quietly = TRUE)); message("babelquarto ", packageVersion("babelquarto"))'
 
       - name: Set up Python
         uses: actions/setup-python@v5
